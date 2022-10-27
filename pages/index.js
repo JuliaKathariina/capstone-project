@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Main>
         <Background>
-          <Image src={BG} alt="background" layout="responsive" />
+          <Image src={BG} alt="background" layout="fill" />
         </Background>
         <StyledHeadline>My Souls place</StyledHeadline>
         <Buttonhome />
@@ -34,6 +34,7 @@ const Background = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
+
   overflow-y: hidden;
   top: 0;
   left: 0;
