@@ -5,23 +5,23 @@ export default function Buttonhome() {
   return (
     <>
       <Link href="/Card">
-        <Styleleft>Card !</Styleleft>
+        <StyleLeft>Card !</StyleLeft>
       </Link>
 
       <Link href="/mantra">
-        <Styleright>Card !</Styleright>
+        <StyleRight>Card !</StyleRight>
       </Link>
     </>
   );
 }
 
-const Styleleft = styled.a`
+const StyleLeft = styled.a`
   position: absolute;
   bottom: 100px;
   left: 40px;
   color: white;
 `;
-const Styleright = styled.a`
+const StyleRight = styled.a`
   position: absolute;
   bottom: 100px;
   right: 40px;
