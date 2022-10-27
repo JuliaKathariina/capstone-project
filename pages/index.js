@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
-import BG from "../public/img/background.gif";
+import BG from "../public/img/background.svg";
 import Buttonhome from "../components/buttonhome/buttonhome";
 
 export default function Home() {
