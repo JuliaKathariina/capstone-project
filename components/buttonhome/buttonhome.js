@@ -4,12 +4,13 @@ import styled from "styled-components";
 export default function Buttonhome() {
   return (
     <>
-      <Styleink>
-        <Link href="/Card">Card !</Link>
-      </Styleink>
-      <Stylelink>
-        <Link href="/Mantra">Mantra!</Link>
-      </Stylelink>
+      <Link href="/Card">
+        <Styleink>Card !</Styleink>
+      </Link>
+
+      <Link href="/mantra">
+        <Stylelink>Card !</Stylelink>
+      </Link>
     </>
   );
 }
