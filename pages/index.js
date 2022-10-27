@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
-import BG from "../public/img/background.svg";
+import BG from "../public/img/background.jpg";
 import Buttonhome from "../components/buttonhome/buttonhome";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         <Background>
           <Image src={BG} alt="background" layout="responsive" />
         </Background>
-        <H1>My Souls place</H1>
+        <StyledHeadline>My Souls place</StyledHeadline>
         <Buttonhome />
       </Main>
     </div>
@@ -26,7 +26,7 @@ const Main = styled.main`
   text-align: center;
 `;
 
-const H1 = styled.h1`
+const StyledHeadline = styled.h1`
   font-family: "Raleway", sans-serif;
 `;
 
