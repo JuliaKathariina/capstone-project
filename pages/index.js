@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
-import BG from "../public/img/background.jpg";
+import BG from "../public/img/Black Minimalist Starlight Desktop Wallpaper.jpg";
 import Buttonhome from "../components/buttonhome/buttonhome";
 
 export default function Home() {
@@ -28,6 +28,8 @@ const Main = styled.main`
 
 const StyledHeadline = styled.h1`
   font-family: "Raleway", sans-serif;
+  background-color: rgba(245, 235, 235, 0.38);
+  border-radius: 13% 16% 13% 16%;
 `;
 
 const Background = styled.div`
