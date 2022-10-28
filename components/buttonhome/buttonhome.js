@@ -29,7 +29,7 @@ const StyleLeft = styled.a`
   color: white;
   cursor: pointer;
   background-color: rgba(245, 235, 235, 0.38);
-  border-radius: 13% 16% 13% 16%;
+  border-radius: 13% 13% 13% 13%;
 `;
 const StyleRight = styled.a`
   position: absolute;
