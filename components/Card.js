@@ -26,7 +26,7 @@ const CardBody = styled.div`
   overflow: hidden;
   box-sizing: 0 2px 20px;
   box-shadow: gray;
-  border-radius: 10% 10% 10% 10%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

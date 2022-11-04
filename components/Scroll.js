@@ -28,7 +28,7 @@ const StyleImage = styled.div`
   padding: 1rem 1rem;
   font-size: 10px;
   bottom: 55px;
-  right: 3px;
+  left: 3px;
   background-color: rgba(245, 235, 235, 0.38);
   border-radius: 50% 50% 50% 50%;
   color: black;
