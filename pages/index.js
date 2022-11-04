@@ -23,7 +23,6 @@ const Main = styled.main`
 `;
 
 const BackgroundImage = styled.div`
-  width: 100%;
   top: 0;
   right: 0;
   left: 0;

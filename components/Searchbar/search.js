@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import Lupe from "../../public/img/Lupe.png";
 export function Search({ stones, setFilterStones }) {
   const [searchInput, setSearchInput] = useState("");
   useEffect(() => {

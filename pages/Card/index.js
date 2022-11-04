@@ -2,13 +2,13 @@ import NavBar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Card from "../../components/Card.js";
 import ScrollButton from "../../components/Scroll";
-import { DataStones } from "../../Data/DataStones";
+import { dataStones } from "../../Data/DataStones";
 import { Search } from "../../components/Searchbar/search";
 import { useState } from "react";
 
 export default function Home() {
-  const [stones, setStones] = useState(DataStones);
-  const [filterStones, setFilterStones] = useState(DataStones);
+  const [stones, setStones] = useState(dataStones);
+  const [filterStones, setFilterStones] = useState(dataStones);
 
   return (
     <>
@@ -43,7 +43,6 @@ const Main = styled.main`
 `;
 
 const BackgroundImage = styled.div`
-  width: 100%;
   top: 0;
   right: 0;
   left: 0;
