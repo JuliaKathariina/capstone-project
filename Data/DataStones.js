@@ -1,4 +1,4 @@
-export const DataStones = [
+export const dataStones = [
   {
     id: "1",
     img: "/img/A.png",
