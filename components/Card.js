@@ -1,7 +1,25 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-function Card({ name, inhalt, anwendung, sternzeichen, chakra, img }) {
+function Card({
+  name,
+  inhalt,
+  anwendung,
+  sternzeichen,
+  chakra,
+  img,
+  stones,
+  setStones,
+  id,
+}) {
+  function toggleStatus(id) {
+    setStones(
+      stones.map((stone) =>
+        stone.id === id ? { ...stone, status: !stone.status } : stone
+      )
+    );
+  }
+  console.log(stones);
   return (
     <WrapperCard>
       <CardBody>
@@ -13,6 +31,7 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img }) {
         <Headlinedivs>{chakra}</Headlinedivs>
         <CardDescription>{inhalt}</CardDescription>
         <CardDescription>{anwendung}</CardDescription>
+        <Button onClick={() => toggleStatus(id)}>Zu den Favoriten</Button>
       </CardBody>
     </WrapperCard>
   );
@@ -21,7 +40,15 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img }) {
 export default Card;
 
 const WrapperCard = styled.div``;
-
+const Button = styled.button`
+  background-color: rgba(245, 235, 235, 0.38);
+  color: black;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 0px 0px;
+  cursor: pointer;
+`;
 const CardBody = styled.div`
   overflow: hidden;
   box-sizing: 0 2px 20px;

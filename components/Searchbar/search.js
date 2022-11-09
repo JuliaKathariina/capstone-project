@@ -11,7 +11,7 @@ export function Search({ stones, setFilterStones }) {
       setFilterStones(filterData);
     };
     handleChange();
-  }, [searchInput, setFilterStones, stones]);
+  }, [searchInput]);
 
   const [barOpened, setBarOpened] = useState(false);
   const [input, setInput] = useState("");

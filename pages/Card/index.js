@@ -2,13 +2,14 @@ import NavBar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Card from "../../components/Card.js";
 import ScrollButton from "../../components/Scroll";
-import { dataStones } from "../../Data/DataStones";
 import { Search } from "../../components/Searchbar/search";
 import { useState } from "react";
+import { useContext } from "react";
+import { CardContext } from "../../context/cardContext";
 
 export default function Home() {
-  const [stones, setStones] = useState(dataStones);
-  const [filterStones, setFilterStones] = useState(dataStones);
+  const { stones, setStones } = useContext(CardContext);
+  const [filterStones, setFilterStones] = useState(stones);
 
   return (
     <>
@@ -16,9 +17,11 @@ export default function Home() {
         <BackgroundImage />
         <StyledHeadline>My Souls place</StyledHeadline>
         <Search stones={stones} setFilterStones={setFilterStones} />
+
         <div>
           {filterStones.map((item) => (
             <Card
+              id={item.id}
               key={item.id}
               img={item.img}
               name={item.name}
@@ -26,6 +29,9 @@ export default function Home() {
               chakra={item.chakra}
               inhalt={item.inhalt}
               anwendung={item.anwendung}
+              item={item.item}
+              stones={stones}
+              setStones={setStones}
             />
           ))}
         </div>
