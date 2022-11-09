@@ -6,7 +6,7 @@ import ScrollButton from "../../components/Scroll";
 import { useContext } from "react";
 import { CardContext } from "../../context/cardContext";
 
-export default function Home(id) {
+export default function Home() {
   const { stones, setStones } = useContext(CardContext);
 
   const arrayFavo = stones.filter((stones) => stones.status === true);
