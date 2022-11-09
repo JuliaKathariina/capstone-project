@@ -11,7 +11,7 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
       )
     );
   }
-  console.log(stones);
+
   return (
     <CardBody>
       <ImageCard>
