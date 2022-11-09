@@ -1,17 +1,9 @@
 import styled from "styled-components";
 import Image from "next/image";
-
-function Card({
-  name,
-  inhalt,
-  anwendung,
-  sternzeichen,
-  chakra,
-  img,
-  stones,
-  setStones,
-  id,
-}) {
+import { useContext } from "react";
+import { CardContext } from "../context/cardContext.js";
+function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
+  const { stones, setStones } = useContext(CardContext);
   function toggleStatus(id) {
     setStones(
       stones.map((stone) =>
@@ -21,25 +13,22 @@ function Card({
   }
   console.log(stones);
   return (
-    <WrapperCard>
-      <CardBody>
-        <ImageCard>
-          <Image src={img} alt="Stones" width="100px" height="100px" />
-        </ImageCard>
-        <HeadlineCard>{name}</HeadlineCard>
-        <Headlinedivs>{sternzeichen}</Headlinedivs>
-        <Headlinedivs>{chakra}</Headlinedivs>
-        <CardDescription>{inhalt}</CardDescription>
-        <CardDescription>{anwendung}</CardDescription>
-        <Button onClick={() => toggleStatus(id)}>Zu den Favoriten</Button>
-      </CardBody>
-    </WrapperCard>
+    <CardBody>
+      <ImageCard>
+        <Image src={img} alt="Stones" width="100px" height="100px" />
+      </ImageCard>
+      <HeadlineCard>{name}</HeadlineCard>
+      <Headlinedivs>{sternzeichen}</Headlinedivs>
+      <Headlinedivs>{chakra}</Headlinedivs>
+      <CardDescription>{inhalt}</CardDescription>
+      <CardDescription>{anwendung}</CardDescription>
+      <Button onClick={() => toggleStatus(id)}> Favoriten</Button>
+    </CardBody>
   );
 }
 
 export default Card;
 
-const WrapperCard = styled.div``;
 const Button = styled.button`
   background-color: rgba(245, 235, 235, 0.38);
   color: black;

@@ -2,18 +2,15 @@ import NavBar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Card from "../../components/Card.js";
 import ScrollButton from "../../components/Scroll";
-import { Search } from "../../components/Searchbar/search";
-import { useState, useEffect } from "react";
+
 import { useContext } from "react";
 import { CardContext } from "../../context/cardContext";
 
 export default function Home({}) {
   const { stones, setStones } = useContext(CardContext);
 
-  const arrayFavo = stones.filter((stones) => {
-    return stones.status === true;
-  });
-  console.log(arrayFavo);
+  const arrayFavo = stones.filter((stones) => stones.status === true);
+
   return (
     <>
       <Main>
