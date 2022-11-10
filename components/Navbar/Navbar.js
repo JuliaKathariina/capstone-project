@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HeartIcon from "../../public/img/hearticon.svg";
+import HeartMantra from "../../public/img/heartmantra.png";
 import Image from "next/image";
 import HomeIcon from "../../public/img/homeicon.svg";
 import styled from "styled-components";
@@ -31,7 +32,7 @@ function NavBar() {
       </Link>
       <Link href="/FavoMantra">
         <IconStyle>
-          <Image src={HeartIcon} alt="icon" width="50px" height="50px" />
+          <Image src={HeartMantra} alt="icon" width="50px" height="50px" />
         </IconStyle>
       </Link>
     </NavBarStyle>
@@ -56,4 +57,5 @@ const NavBarStyle = styled.div`
   bottom: 0;
   border: none;
   background-color: rgba(245, 235, 235, 0.38);
+  z-index: 500;
 `;

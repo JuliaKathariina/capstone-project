@@ -2,20 +2,19 @@ import NavBar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Card from "../../components/Card.js";
 import ScrollButton from "../../components/Scroll";
-
 import { useContext } from "react";
 import { CardContext } from "../../context/cardContext";
-
+import { useState } from "react";
 export default function Home() {
   const { stones, setStones } = useContext(CardContext);
-
+  const [checked, setChecked] = useState(true);
   const arrayFavo = stones.filter((stones) => stones.status === true);
 
   return (
     <>
       <Main>
         <BackgroundImage />
-        <StyledHeadline>My Souls place</StyledHeadline>
+        <StyledHeadline>StyledHeadline</StyledHeadline>
         <div>
           {arrayFavo.map((item) => (
             <Card
@@ -30,6 +29,7 @@ export default function Home() {
               item={item.item}
               stones={stones}
               setStones={setStones}
+              checked={checked}
             />
           ))}
         </div>

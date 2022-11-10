@@ -2,8 +2,11 @@ import styled from "styled-components";
 import Image from "next/image";
 import { useContext } from "react";
 import { CardContext } from "../context/cardContext.js";
+import { useState } from "react";
+import { HeartSwitch } from "@anatoliygatt/heart-switch";
 function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
   const { stones, setStones } = useContext(CardContext);
+  const [checked, setChecked] = useState(true);
   function toggleStatus(id) {
     setStones(
       stones.map((stone) =>
@@ -22,7 +25,20 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
       <Headlinedivs>{chakra}</Headlinedivs>
       <CardDescription>{inhalt}</CardDescription>
       <CardDescription>{anwendung}</CardDescription>
-      <Button onClick={() => toggleStatus(id)}> Favoriten</Button>
+      <HeartSwitch
+        size="lg"
+        inactiveTrackFillColor="#00000075"
+        inactiveTrackStrokeColor="##05040500"
+        activeTrackFillColor="#00000075"
+        activeTrackStrokeColor="##05040500"
+        inactiveThumbColor="#E6E6E6FF"
+        activeThumbColor="#00000000"
+        onClick={() => toggleStatus(id)}
+        checked={checked}
+        onChange={(event) => {
+          setChecked(event.target.checked);
+        }}
+      />
     </CardBody>
   );
 }
@@ -30,12 +46,10 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
 export default Card;
 
 const Button = styled.button`
-  background-color: rgba(245, 235, 235, 0.38);
+  background-color: rgba(119, 105, 120, 0.11);
   color: black;
   font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 0px 0px;
+
   cursor: pointer;
 `;
 const CardBody = styled.div`
@@ -46,7 +60,7 @@ const CardBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(245, 235, 235, 0.38);
+  background-color: rgba(119, 105, 120, 0.85);
   margin: 20px 50px;
   z-index: 3;
 `;
