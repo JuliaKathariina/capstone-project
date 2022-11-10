@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState, useRef, useEffect } from "react";
+import { MdSearch } from "react-icons/md";
 export function Search({ stones, setFilterStones }) {
   const [searchInput, setSearchInput] = useState("");
   useEffect(() => {
@@ -11,7 +12,7 @@ export function Search({ stones, setFilterStones }) {
       setFilterStones(filterData);
     };
     handleChange();
-  }, [searchInput, setFilterStones, stones]);
+  }, [searchInput]);
 
   const [barOpened, setBarOpened] = useState(false);
   const [input, setInput] = useState("");
@@ -35,7 +36,7 @@ export function Search({ stones, setFilterStones }) {
         ref={formRef}
       >
         <SearchButton type="submit" barOpened={barOpened}>
-          ◉
+          <MdSearch size="35px" />
         </SearchButton>
         <Input
           type="search"

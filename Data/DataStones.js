@@ -10,6 +10,7 @@ export const dataStones = [
       "In der Meditation wirkt er sich stark auf dein drittes Auge und kann dir den Zugang zur spirituellen Ebene erleichtern. Er reinig die Atmospähre und bringt harmonie in das Familienleben.",
     anwendung:
       " Trage deinen Amethyst als Schmunk auf der Haut, lege ihn direkt auf die gewünschte Körperstelle oder stelle ihn in deiner Umgebung auf. ",
+    status: false,
   },
   {
     id: "2",
@@ -22,6 +23,7 @@ export const dataStones = [
       "Man setzt Angel Aura ein, um die Charken zu stimulieren und zu harmoisieren. Der Bergkristall, als sogenannten Master Healer Stein, verstärkt die Energien anderer Sterine und wirkt selbst positiv auf Harmonie und Heilung",
     anwendung:
       " Anwendung: Trage deinen Amethyst als Schmunk auf der Haut, lege ihn direkt auf die gewünschte Körperstelle oder stelle ihn in deiner Umgebung auf. ",
+    status: false,
   },
   {
     id: "3",
@@ -34,6 +36,7 @@ export const dataStones = [
       "Aventurin kann Ängste lindern und uns Selbstvertrauen verleihen, um auch bei Stress und Konflikten entspannt und selbstsicher zu bleiben.",
     anwendung:
       " Anwendung: Die bestmögliche Wirkung deinen Aventurins, trage ihn über längere Zeit nah am Körper oder lege ihn direkt auf die gewünschte Körperstelle. ",
+    status: false,
   },
   {
     id: "4",
@@ -47,6 +50,7 @@ export const dataStones = [
       "Der Bergkristall spendet positive (Licht-) Energie und Kraft, löst Blockaden und hilft dabei, das Denken klar und ruhig werden zu lassen, um Erholung zu finden.",
     anwendung:
       " Anwendung: Für eine  körperliche Wirkung, trage deinen Bergkristall direkt auf der Haut oder lege ihn auf jene Körperstelle, dir von seiner Wirkung profitieren sollen. Um ihn als Schutzstein zu nutzen, wird empfohlen, ihn über der Kleidung zu tragen. ",
+    status: false,
   },
   {
     id: "5",
@@ -59,6 +63,7 @@ export const dataStones = [
       "Candle Quarz ist ein uralter Stein, der kraftvolle Energien, voller Licht und Liebe in sich trägt. Er gilt als Stein der Fülle, der Hoffnung spendet auch Fülle und Wohlstand anzieht. Er trägt außerdem eine Heilenergie in sich, die stark auf unseres inneres Kind wirkt.",
     anwendung:
       " Anwendung: Am besten spürst du die Energie deines Candle Quarz wenn du ihn in tiefer Meditation in deinen Umfeld stehen oder sogar in der Hand hast. ",
+    status: false,
   },
   {
     id: "6",
@@ -71,6 +76,7 @@ export const dataStones = [
       "Eldarit wird auch Nebula Stone genannt, nach dem Aussehen eines Spiralnebels im Weltall. Der Eldarit gilt als Geburtsstein des Kosmos und kann uns kraftvoll dabei unterstützen, unseren Geist zu klären und uns gegen Sorgen und Zweifel zu schützen. Eldarit lädt uns spirituell auf und hilft Körper und Geist zum Strahlen zu bringen.",
     anwendung:
       " Anwendung:Für die körperliche Wirkung trägst du deinen Eldarit am besten direkt auf der Haut.  Eldaritkugeln kannst du wunderbar während deiner Meditation in der Hand halten, um die Wirkung des Steins aufzunehmen. Sie wirken ebenfalls als Massagekugeln oder auf einem geeigneten Ständer oder einer Ablage im Raum. ",
+    status: false,
   },
   {
     id: "7",
@@ -83,6 +89,7 @@ export const dataStones = [
       "Alle Fluorite können inspirierend wirken und unsere Intuition und Konzentration stärken. Sie sind daher perfekt geeignet für alle, die geistige Arbeit leisten, in der Schule oder im Büro. Gerade in Prüfungssituationen kann ein Fluorit uns  helfen, indem er uns die Prüfungsangst nimmt  und uns hilft, uns zu fokussieren.Der Fluorit hilft jedoch nicht nur dabei, unsere  innere Ordnung zu finden, sondern öffnet uns auch für Liebe und Freundschaft. In der Meditation kann er dabei helfen, uns weit zu öffnen und Wärme und Ruhe zu empfinden.",
     anwendung:
       "Trage deinen Fluorit direkt auf der Haut, um von seiner Wirkung zu profitieren. Erfahre seine geistige Wirkung, indem du ihn in einem ruhigen  Moment betrachtest. ",
+    status: false,
   },
   {
     id: "8",
@@ -95,6 +102,7 @@ export const dataStones = [
       "Der Girasol ist eine Varietät des Opals. Ein wahrer Seelenstein, der uns dabei unterstützen kann, unsere Bedürfnisse und Wünsche wieder zu spüren. Der uns vor allem dann helfen kann, wenn wir uns zu lange nach den Anforderungen von außen ausgerichtet und unser eigenes Streben vergessen haben. Mit neuem Schwung kann uns der Girasol dabei helfen, in neue Lebensabschnitte aufzubrechen.  Im Girasol sind Opal- und Quarzanteile gemischt enthalten. Dies erzeugt wunderbare, Schleier und  Schlieren im Stein, weshalb der Girasolquarz auch Nebelquarz genannt wird.",
     anwendung:
       "Anwendung:Da der Girasol auch körperliche Anspannung lösen können soll, kannst du ihn besonders gut in Form von Massagekugeln einsetzen. Aber auch als Anhänger getragen wirkt er kraftvoll. ",
+    status: false,
   },
   {
     id: "9",
@@ -107,6 +115,7 @@ export const dataStones = [
       "Granat steht für Ehrlichkeit und Klarheit. Er kann dabei helfen, emotionale Blockade zu lösen und festgefahrene Gewohnheiten hinterwegs zu lassen..",
     anwendung:
       "Anwendung:Trage deinen Granat regelmäßig nah am Körper, um seine Wirkung zu erfahren. ",
+    status: false,
   },
   {
     id: "10",
@@ -119,6 +128,7 @@ export const dataStones = [
       "Er fördert die Durchsetzungskraft und hilft uns, auf unsere eigenen Bedürfnisse Acht zu geben. Er gilt als blutreinigend und ihm wird eine positive Wirkung während der Menstruation zugeschrieben.",
     anwendung:
       "Anwendung:Trage Deinen Hämatit als Schmuck oder lege ihn auf den Körper auf, um seine Wirkung zu erfahren. Vorsicht bei Entzündungen - es wird vermutet, dass Hämatit Entzündungen verstärken kann ",
+    status: false,
   },
   {
     id: "11",
@@ -131,6 +141,7 @@ export const dataStones = [
       "Heliotrop hilft dir, dich von äußeren Einflüssen abzugrenzen und stets ganz bei dir zu bleiben. Er fördert die Aufmerksamkeit, das Gefühl, die Kontrolle zu bewahren und hilft so dabei, bewusst zu agieren, statt kopflos zu reagieren. In der Nacht kann er einen ruhigen Schlaf fördern und Alpträume fern halten. Außerdem  soll Helitrop dein Immunsystem unterstützen können, wenn die ersten Krankheitsanzeichen auftauchen.",
     anwendung:
       "Anwendung:Dein Heliotrop soll seine Wirkung am besten  entfalten können, wenn du ihn auf die Thymusdrüse auflegst, aber auch auf anderen Körperstellen, kannst du ihn nutzen.",
+    status: false,
   },
   {
     id: "12",
@@ -143,6 +154,7 @@ export const dataStones = [
       "Jade kann einerseits Lebenslust und Freude in uns auslösen, uns andererseits aber auch beruhigen und die Innenschau fördern. Jade gilt als Stein, der unsere Liebesfähigkeit stärken und bei Kinderwunsch unterstützend wirken kann.",
     anwendung:
       "Anwendung:Für körperliche Wirkung trägst du deinen Jade (Nephrit) am besten direkt auf der Haut, legst ihn auf oder klebst ihn sogar vorübergehend - z.B. mit einem Pflaster - fest. ",
+    status: false,
   },
   {
     id: "13",
@@ -155,6 +167,7 @@ export const dataStones = [
       "Kirschblütenachat ist eine Form des Achats mT Chalcedon-Einschlüssen, die häufig eine Form wie kleine Blüten annehmen. Der Kirschblütenachat soll auch uns dabei helfen,  zu erblühen. Er ist ein sehr weicher und weiblicher Stein, der unsere Wurzeln stärkt und uns gleichzeitig dabei unterstützt, unsere Ziele zu erreichen. Er soll uns dazu anregen, unser Leben auszukosten, das, was uns begeistert, zu verfolgen und uns nicht klein zu machen. Ein  wunderbarer Stein, um deine Träume zu verfolgen. Lebe deine Träume und erblühe - mit dem wunderschönen Kirschblütenachat.",
     anwendung:
       "Anwendung: Für die beste körperliche Wirkung trage deinen Kirschblütenachat als Schmuck, lege ihn auf die  betroffene Stelle oder trinke mit Kirschblütenachat energetisiertes Wasser.",
+    status: "false",
   },
   {
     id: "14",
@@ -168,6 +181,7 @@ export const dataStones = [
       "Labradorit kann unsere Kreativität fördern, uns tiefes Glück empfinden lassen und traumatische  Erinnerungen leichter verarbeiten. Labradorit kann aufbrausende Gemüter beruhigen und uns in Harmonie mit uns selbst - und auch unseren  Partnern bringen. Der sanft schillernde Stein zeigt uns, dass kein Ding und kein Mensch nur eine Facette hat.",
     anwendung:
       "Anwendung:Trage deinen Labradorit direkt auf der Haut, umvon seiner Wirkung zu profitieren. Um seine geistige Wirkung zu erfahren, nimm dir einen  Moment, um deinen Labradorit in Ruhe zu betrachten.",
+    status: false,
   },
   {
     id: "15",
@@ -180,5 +194,6 @@ export const dataStones = [
       "Mondstein kann uns mit unserer Intuition und unserem ursprünglichen Selbst verbinden. Gerade für Frauen ist Mondstein ein sehr machtvoller Stein, der dabei hilft, unsere weiche, vertrauende, gebende Seite zu entdecken und zu stärken..",
     anwendung:
       "Anwendung:Trage deinen Mondstein über einen längeren Zeitraum, um seine Wirkung voll auszunutzen. Es wird außerdem empfohlen ihn regelmäßig auf Herz und Stirn zu legen.",
+    status: false,
   },
 ];

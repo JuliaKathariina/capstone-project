@@ -1,10 +1,13 @@
 import GlobalStyle from "../components/GlobalStyle";
+import { CardProvider } from "../context/cardContext";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
-      <Component {...pageProps} />
+      <CardProvider>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </CardProvider>
     </>
   );
 }
