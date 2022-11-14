@@ -4,7 +4,8 @@ import Card from "../../components/Card.js";
 import ScrollButton from "../../components/Scroll";
 import { useContext } from "react";
 import { CardContext } from "../../context/cardContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useLocalStorage from "../../components/hook/useLocalStorage";
 export default function Home() {
   const { stones, setStones } = useContext(CardContext);
   const [checked, setChecked] = useState(true);

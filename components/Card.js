@@ -4,9 +4,11 @@ import { useContext } from "react";
 import { CardContext } from "../context/cardContext.js";
 import { useState } from "react";
 import { HeartSwitch } from "@anatoliygatt/heart-switch";
+
 function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
   const { stones, setStones } = useContext(CardContext);
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(false);
+
   function toggleStatus(id) {
     setStones(
       stones.map((stone) =>

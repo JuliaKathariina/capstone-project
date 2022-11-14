@@ -10,7 +10,6 @@ import { CardContext } from "../../context/cardContext";
 export default function Home() {
   const { stones, setStones } = useContext(CardContext);
   const [filterStones, setFilterStones] = useState(stones);
-  const [checked, setChecked] = useState(true);
 
   return (
     <>
@@ -34,7 +33,6 @@ export default function Home() {
               item={item.item}
               stones={stones}
               setStones={setStones}
-              checked={checked}
             />
           ))}
         </div>
