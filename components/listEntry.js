@@ -3,16 +3,14 @@ import styled from "styled-components";
 
 function ListEntry({ id, mantra, category, handleRemove }) {
   return (
-    <>
-      <Card>
-        <Headlineh3> Mantra </Headlineh3>
-        <Output>{mantra} </Output>
-        <Output>{category} </Output>
-        <Button type="button" onClick={() => handleRemove(id)}>
-          X
-        </Button>
-      </Card>
-    </>
+    <Card>
+      <Headlineh3> Mantra </Headlineh3>
+      <Output>{mantra} </Output>
+      <Output>{category} </Output>
+      <Button type="button" onClick={() => handleRemove(id)}>
+        X
+      </Button>
+    </Card>
   );
 }
 export default ListEntry;

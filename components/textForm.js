@@ -7,7 +7,7 @@ function TextForm({ appendListEntry }) {
 
     const formData = new FormData(event.target);
     const { mantra, category } = Object.fromEntries(formData);
-    console.log(category);
+
     appendListEntry(mantra, category);
   }
 

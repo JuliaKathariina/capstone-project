@@ -7,7 +7,7 @@ import NavBar from "../../components/Navbar/Navbar";
 
 function MantraList() {
   const { mantraField, setMantraField } = useContext(CardContext);
-  console.log(mantraField);
+
   function handleRemove(id) {
     const newList = mantraField.filter((listEntry) => listEntry.id !== id);
 
@@ -21,14 +21,12 @@ function MantraList() {
       <Container>
         <List>
           {mantraField?.map((listEntry) => (
-            <>
-              <ListEntry
-                id={listEntry.id}
-                mantra={listEntry.mantra}
-                category={listEntry.category}
-                handleRemove={handleRemove}
-              ></ListEntry>
-            </>
+            <ListEntry
+              key={listEntry.id}
+              mantra={listEntry.mantra}
+              category={listEntry.category}
+              handleRemove={handleRemove}
+            ></ListEntry>
           ))}
         </List>
 

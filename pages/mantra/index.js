@@ -4,6 +4,7 @@ import TextForm from "../../components/textForm";
 import { CardContext } from "../../context/cardContext";
 import Navbar from "../../components/Navbar/Navbar.js";
 import ScrollButton from "../../components/Scroll";
+
 function TextPage() {
   const { mantraField, setMantraField } = useContext(CardContext);
   function appendListEntry(mantra, category) {
@@ -13,7 +14,7 @@ function TextPage() {
         mantra,
         category,
 
-        id: Math.random().toString(),
+        id: Math.random().toString(36).substring(2),
       },
     ]);
   }
