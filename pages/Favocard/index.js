@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Main>
         <BackgroundImage />
-        <StyledHeadline>StyledHeadline</StyledHeadline>
+        <StyledHeadline>YOUR HEALING STONES</StyledHeadline>
         <div>
           {arrayFavo.map((item) => (
             <Card

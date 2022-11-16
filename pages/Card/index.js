@@ -16,7 +16,7 @@ export default function Home() {
       <Main>
         <BackgroundImage />
         <NavBar />
-        <StyledHeadline>StyledHeadline</StyledHeadline>
+        <StyledHeadline>HEALING STONES</StyledHeadline>
         <Search stones={stones} setFilterStones={setFilterStones} />
 
         <div>
