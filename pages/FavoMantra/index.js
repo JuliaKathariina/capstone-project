@@ -23,6 +23,7 @@ function MantraList() {
           {mantraField?.map((listEntry) => (
             <ListEntry
               key={listEntry.id}
+              id={listEntry.id}
               mantra={listEntry.mantra}
               category={listEntry.category}
               handleRemove={handleRemove}

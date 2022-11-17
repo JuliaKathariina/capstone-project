@@ -14,35 +14,34 @@ function TextForm({ appendListEntry }) {
   const router = useRouter();
 
   return (
-    <>
-      <Form onSubmit={sendForm}>
-        <Headline>Hier ist platz für deine Affirmationen und Mantras</Headline>
-        <InputLabel htmlfor="Mantra"> Mantra</InputLabel>
-        <InputField
-          type="text"
-          id="mantra"
-          name="mantra"
-          placeholder="Ich bin ..."
-          rows="2"
-          maxLength="240"
-          required
-        ></InputField>
-        <InputLabel htmlfor="Categroy"> Category</InputLabel>
-        <InputField
-          type="text"
-          id="category"
-          name="category"
-          placeholder="#Healing"
-          rows="2"
-          maxLength="240"
-          required
-        ></InputField>
+    <Form onSubmit={sendForm}>
+      <Headline>Hier ist platz für deine Affirmationen und Mantras</Headline>
+      <InputLabel htmlfor="Mantra"> Mantra</InputLabel>
+      <InputField
+        type="text"
+        id="mantra"
+        name="mantra"
+        placeholder="Ich bin ..."
+        rows="2"
+        maxLength="240"
+        required
+      ></InputField>
+      <InputLabel htmlfor="Categroy"> Category</InputLabel>
+      <InputField
+        type="text"
+        id="category"
+        name="category"
+        placeholder="#Healing"
+        rows="2"
+        maxLength="240"
+        required
+      ></InputField>
+      <ButtonSave type="submit">Save</ButtonSave>
 
-        <Button type="submit" onClick={() => router.push("/FavoMantra")}>
-          Edit
-        </Button>
-      </Form>
-    </>
+      <Button onClick={() => router.push("/FavoMantra")}>
+        🧘🏽click here for your mantra
+      </Button>
+    </Form>
   );
 }
 
@@ -60,13 +59,30 @@ const Form = styled.form`
   margin: 10px;
   text-align: center;
 `;
-
-const Button = styled.button`
-  font-size: 1rem;
+const ButtonSave = styled.button`
   background: white;
-  border-radius: 0.5rem;
-  transition: 0.1s;
+  text-align: center;
+  border: none;
+  padding: 5;
+  text-decoration: underline;
   cursor: pointer;
+  outline: black;
+
+  &:hover {
+    background: black;
+    color: white;
+    transition: 0.1s;
+  }
+`;
+const Button = styled.button`
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: black;
+
   &:hover {
     background: black;
     color: white;

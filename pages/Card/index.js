@@ -15,11 +15,11 @@ export default function Home() {
     <>
       <Main>
         <BackgroundImage />
-        <NavBar />
-        <StyledHeadline>HEALING STONES</StyledHeadline>
+
+        <StyledHeadline></StyledHeadline>
         <Search stones={stones} setFilterStones={setFilterStones} />
 
-        <div>
+        <CardContainer>
           {filterStones.map((item) => (
             <Card
               id={item.id}
@@ -30,21 +30,25 @@ export default function Home() {
               chakra={item.chakra}
               inhalt={item.inhalt}
               anwendung={item.anwendung}
-              item={item.item}
               stones={stones}
               setStones={setStones}
+              status={item.status}
             />
           ))}
-        </div>
-
+        </CardContainer>
         <ScrollButton />
       </Main>
+      <NavBar />
     </>
   );
 }
 
 const Main = styled.main`
   display: grid;
+`;
+
+const CardContainer = styled.div`
+  margin-bottom: 5rem;
 `;
 
 const BackgroundImage = styled.div`

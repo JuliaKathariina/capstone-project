@@ -10,7 +10,12 @@ export const CardProvider = ({ children }) => {
 
   return (
     <CardContext.Provider
-      value={{ stones, setStones, mantraField, setMantraField }}
+      value={{
+        stones,
+        setStones,
+        mantraField,
+        setMantraField,
+      }}
     >
       {children}
     </CardContext.Provider>

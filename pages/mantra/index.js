@@ -19,7 +19,7 @@ function TextPage() {
     ]);
   }
   return (
-    <>
+    <ContainerMantra>
       <BackgroundImage />
       <Headline> MANTRAS & AFFIRMATIONEN </Headline>
       <Container>
@@ -49,7 +49,7 @@ function TextPage() {
       </Container>
       <Navbar />
       <ScrollButton />
-    </>
+    </ContainerMantra>
   );
 }
 export default TextPage;
@@ -58,7 +58,9 @@ const Headlineh3 = styled.h3`
   text-align: center;
   z-index: 600;
 `;
-
+const ContainerMantra = styled.div`
+  margin-bottom: 6rem;
+`;
 const Headline = styled.h1`
   font-family: "Raleway", sans-serif;
   background-color: rgba(245, 235, 235, 0.38);

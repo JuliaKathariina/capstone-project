@@ -167,7 +167,7 @@ export const dataStones = [
       "Kirschblütenachat ist eine Form des Achats mT Chalcedon-Einschlüssen, die häufig eine Form wie kleine Blüten annehmen. Der Kirschblütenachat soll auch uns dabei helfen,  zu erblühen. Er ist ein sehr weicher und weiblicher Stein, der unsere Wurzeln stärkt und uns gleichzeitig dabei unterstützt, unsere Ziele zu erreichen. Er soll uns dazu anregen, unser Leben auszukosten, das, was uns begeistert, zu verfolgen und uns nicht klein zu machen. Ein  wunderbarer Stein, um deine Träume zu verfolgen. Lebe deine Träume und erblühe - mit dem wunderschönen Kirschblütenachat.",
     anwendung:
       "Anwendung: Für die beste körperliche Wirkung trage deinen Kirschblütenachat als Schmuck, lege ihn auf die  betroffene Stelle oder trinke mit Kirschblütenachat energetisiertes Wasser.",
-    status: "false",
+    status: false,
   },
   {
     id: "14",
