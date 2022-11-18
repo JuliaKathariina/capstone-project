@@ -9,6 +9,7 @@ function TextForm({ appendListEntry }) {
     const { mantra, category } = Object.fromEntries(formData);
 
     appendListEntry(mantra, category);
+    router.push("/FavoMantra");
   }
 
   const router = useRouter();
@@ -36,11 +37,7 @@ function TextForm({ appendListEntry }) {
         maxLength="240"
         required
       ></InputField>
-      <ButtonSave type="submit">Save</ButtonSave>
-
-      <Button onClick={() => router.push("/FavoMantra")}>
-        🧘🏽click here for your mantra
-      </Button>
+      <ButtonSave type="submit">Save 🧘🏽click here for your mantra</ButtonSave>
     </Form>
   );
 }
