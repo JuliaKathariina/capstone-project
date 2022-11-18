@@ -18,6 +18,7 @@ export default function useLocalStorage(key, initialState) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem(key);
+
     if (stored !== null) {
       setState(JSON.parse(stored));
     }

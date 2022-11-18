@@ -5,10 +5,18 @@ import { CardContext } from "../context/cardContext.js";
 import { useState } from "react";
 import { HeartSwitch } from "@anatoliygatt/heart-switch";
 
-function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
+function Card({
+  name,
+  inhalt,
+  anwendung,
+  sternzeichen,
+  chakra,
+  img,
+  id,
+  status,
+}) {
   const { stones, setStones } = useContext(CardContext);
-  const [checked, setChecked] = useState(false);
-
+  const [checked, setChecked] = useState(status);
   function toggleStatus(id) {
     setStones(
       stones.map((stone) =>
@@ -29,17 +37,17 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
       <CardDescription>{anwendung}</CardDescription>
       <HeartSwitch
         size="lg"
-        inactiveTrackFillColor="#00000075"
-        inactiveTrackStrokeColor="##05040500"
-        activeTrackFillColor="#00000075"
-        activeTrackStrokeColor="##05040500"
+        inactiveTrackFillColor="#110604"
+        inactiveTrackStrokeColor="#110604"
+        activeTrackFillColor="#800000"
+        activeTrackStrokeColor="#800000"
         inactiveThumbColor="#E6E6E6FF"
         activeThumbColor="#00000000"
-        onClick={() => toggleStatus(id)}
-        checked={checked}
         onChange={(event) => {
+          toggleStatus(id);
           setChecked(event.target.checked);
         }}
+        checked={checked}
       />
     </CardBody>
   );
@@ -47,13 +55,6 @@ function Card({ name, inhalt, anwendung, sternzeichen, chakra, img, id }) {
 
 export default Card;
 
-const Button = styled.button`
-  background-color: rgba(119, 105, 120, 0.11);
-  color: black;
-  font-size: 20px;
-
-  cursor: pointer;
-`;
 const CardBody = styled.div`
   overflow: hidden;
   box-sizing: 0 2px 20px;
@@ -65,6 +66,7 @@ const CardBody = styled.div`
   background-color: rgba(119, 105, 120, 0.85);
   margin: 20px 50px;
   z-index: 3;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
 const ImageCard = styled.div`

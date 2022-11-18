@@ -4,19 +4,18 @@ import Card from "../../components/Card.js";
 import ScrollButton from "../../components/Scroll";
 import { useContext } from "react";
 import { CardContext } from "../../context/cardContext";
-import { useState, useEffect } from "react";
-import useLocalStorage from "../../components/hook/useLocalStorage";
+
 export default function Home() {
   const { stones, setStones } = useContext(CardContext);
-  const [checked, setChecked] = useState(true);
+
   const arrayFavo = stones.filter((stones) => stones.status === true);
 
   return (
     <>
       <Main>
         <BackgroundImage />
-        <StyledHeadline>StyledHeadline</StyledHeadline>
-        <div>
+        <StyledHeadline>YOUR HEALING STONES</StyledHeadline>
+        <CardContainer>
           {arrayFavo.map((item) => (
             <Card
               id={item.id}
@@ -27,13 +26,12 @@ export default function Home() {
               chakra={item.chakra}
               inhalt={item.inhalt}
               anwendung={item.anwendung}
-              item={item.item}
               stones={stones}
               setStones={setStones}
-              checked={checked}
+              status={item.status}
             />
           ))}
-        </div>
+        </CardContainer>
 
         <ScrollButton />
 
@@ -46,6 +44,9 @@ const Main = styled.main`
   display: grid;
 `;
 
+const CardContainer = styled.div`
+  margin-bottom: 5rem;
+`;
 const BackgroundImage = styled.div`
   top: 0;
   right: 0;
