@@ -56,6 +56,6 @@ const NavBarStyle = styled.div`
   align-items: center;
   bottom: 0;
   border: none;
-  background-color: rgba(245, 235, 235, 0.38);
+  background-color: white;
   z-index: 500;
 `;
