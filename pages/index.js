@@ -15,7 +15,7 @@ export default function Home() {
         <Container>
           <StyledHeadlineh4>Reminder</StyledHeadlineh4>
           <BoxText>
-            Contentment is the philosopher's stone that turns everything it
+            Contentment is the philosophers stone that turns everything it
             touches into gold.
           </BoxText>
 
@@ -29,7 +29,7 @@ export default function Home() {
         </Container>
         <Container>
           <StyledHeadlineh4>Reminder</StyledHeadlineh4>
-          <BoxText>Do things at your own pace. Life's not a race</BoxText>
+          <BoxText>Do things at your own pace. Lifes not a race</BoxText>
 
           <Devicer />
           <Devicer1>
