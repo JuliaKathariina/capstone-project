@@ -17,7 +17,7 @@ function MantraList() {
   return (
     <>
       <BackgroundImage />
-      <Headline> Deine Mantra und Affirmationen</Headline>
+      <Headline> Deine Mantras und Affirmationen</Headline>
       <Container>
         <List>
           {mantraField?.map((listEntry) => (
@@ -46,7 +46,7 @@ const BackgroundImage = styled.div`
   bottom: 0;
   z-index: -9999;
   position: fixed;
-  background-image: url("/img/favoMantroimg.png");
+  background-image: url("/img/beige.jpg");
   background-size: 100vh;
 `;
 const Container = styled.div`
@@ -58,7 +58,7 @@ const Container = styled.div`
 `;
 const Headline = styled.h1`
   font-family: "Raleway", sans-serif;
-  background-color: rgba(245, 235, 235, 0.38);
+  background-color: white;
   border-radius: 15px 15px 15px 15px;
   text-align: center;
   z-index: 600;

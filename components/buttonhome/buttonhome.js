@@ -1,42 +1,31 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Image from "next/image";
-import MoonIcon from "../../public/img/moonicon.svg";
-import KristallIcon from "../../public/img/kristalicon.svg";
 
 export default function Buttonhome() {
   return (
     <>
       <Link href="/Card">
-        <StyleLeft>
-          <Image src={KristallIcon} alt="icon" width="50px" height="50px" />
-        </StyleLeft>
+        <StyleLeft> Show me stones...</StyleLeft>
       </Link>
 
       <Link href="/mantra">
-        <StyleRight>
-          <Image src={MoonIcon} alt="icon" width="50px" height="50px" />
-        </StyleRight>
+        <StyleRight>Show me mantra...</StyleRight>
       </Link>
     </>
   );
 }
 
 const StyleLeft = styled.a`
-  position: absolute;
-  bottom: 50px;
+  position: fixed;
+  top: 275px;
   left: 40px;
-  color: white;
+  text-decoration: underline double black;
   cursor: pointer;
-  background-color: rgba(245, 235, 235, 0.38);
-  border-radius: 13% 13% 13% 13%;
 `;
 const StyleRight = styled.a`
-  position: absolute;
-  bottom: 50px;
-  right: 40px;
-  color: white;
+  position: fixed;
+  bottom: 170px;
+  left: 40px;
+  text-decoration: underline double black;
   cursor: pointer;
-  background-color: rgba(245, 235, 235, 0.38);
-  border-radius: 13% 16% 13% 16%;
 `;

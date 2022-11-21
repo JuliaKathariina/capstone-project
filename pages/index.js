@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Buttonhome from "../components/buttonhome/buttonhome";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
@@ -11,16 +11,61 @@ export default function Home() {
       </Head>
       <Main>
         <BackgroundImage />
-        <StyledHeadline>My Souls place</StyledHeadline>
-        <Buttonhome />
+
+        <Container>
+          <StyledHeadlineh4>Reminder</StyledHeadlineh4>
+          <BoxText>
+            Contentment is the philosopher's stone that turns everything it
+            touches into gold.
+          </BoxText>
+
+          <Devicer />
+          <Devicer1>
+            <PLeft>Okay </PLeft>
+          </Devicer1>
+          <Link href="/Card">
+            <StyleLeft> Show me stones...</StyleLeft>
+          </Link>
+        </Container>
+        <Container>
+          <StyledHeadlineh4>Reminder</StyledHeadlineh4>
+          <BoxText>Do things at your own pace. Life's not a race</BoxText>
+
+          <Devicer />
+          <Devicer1>
+            <PLeft>Okay </PLeft>
+          </Devicer1>
+          <Link href="/mantra">
+            <StyleRight>Show me mantra...</StyleRight>
+          </Link>
+        </Container>
       </Main>
     </div>
   );
 }
 
+const StyleLeft = styled.a`
+  text-decoration: underline double black;
+  cursor: pointer;
+`;
+const StyleRight = styled.a`
+  text-decoration: underline double black;
+  cursor: pointer;
+`;
 const Main = styled.main`
   display: grid;
+  margin-top: 7rem;
 `;
+const Container = styled.div`
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+`;
+const BoxText = styled.p``;
 
 const BackgroundImage = styled.div`
   top: 0;
@@ -29,12 +74,25 @@ const BackgroundImage = styled.div`
   bottom: 0;
   z-index: -9999;
   position: fixed;
-  background-image: url("/img/starlight_background.jpg");
-  background-size: 100vh;
+  background-image: url("/img/home.jpg");
 `;
 
-const StyledHeadline = styled.h1`
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(245, 235, 235, 0.38);
-  border-radius: 13% 16% 13% 16%;
+const StyledHeadlineh4 = styled.h4``;
+
+const PLeft = styled.p`
+  margin-left: 4rem;
+  text-decoration: line-through wavy black;
+`;
+
+const Devicer = styled.div`
+  width: 100%;
+  height: 2px;
+  background-color: #4b4b4d;
+  margin: auto 0;
+`;
+const Devicer1 = styled.div`
+  height: 3em;
+  margin-left: 10em;
+  width: 2px;
+  background-color: #4b4b4d;
 `;

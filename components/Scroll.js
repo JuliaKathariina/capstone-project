@@ -28,8 +28,8 @@ const StyleImage = styled.div`
   padding: 1rem 1rem;
   font-size: 10px;
   bottom: 55px;
-  left: 3px;
-  background-color: rgba(245, 235, 235, 0.38);
+  right: 3px;
+  background-color: white;
   border-radius: 50% 50% 50% 50%;
   color: black;
   text-align: center;
