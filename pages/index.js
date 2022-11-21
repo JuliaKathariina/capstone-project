@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import AppHeader from "../components/Header/Header";
 
 import Link from "next/link";
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
       </Head>
+      <AppHeader />
       <Main>
         <BackgroundImage />
 

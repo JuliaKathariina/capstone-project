@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useRouter } from "next/router";
-
+import Form from "./Form/form";
 function TextForm({ appendListEntry }) {
   function sendForm(event) {
     event.preventDefault();
@@ -54,11 +54,6 @@ const Headline = styled.h3`
   margin: 10px;
 `;
 
-const Form = styled.form`
-  padding: 0px;
-  margin: 10px;
-  text-align: center;
-`;
 const ButtonSave = styled.button`
   background: white;
   font-size: 15px;
